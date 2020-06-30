@@ -8,6 +8,10 @@
 # Course.destroy_all
 # Hole.destroy_all
 
+# Users
+User.create(first_name: "Dan", last_name: "Kersten", email: "dk@hi.com", password: "123", password_digest: "123")
+User.create(first_name: "Liz", last_name: "Lemon", email: "ll@hi.com", password: "123", password_digest: "123")
+
 # Courses
 # Course.create(name: "Brighton")
 # Course.create(name: "Sheridan")
