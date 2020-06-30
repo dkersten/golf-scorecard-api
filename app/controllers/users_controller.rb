@@ -3,4 +3,11 @@ class UsersController < ApplicationController
         users = User.all
         render json: users.to_json
     end
+
+    def show
+        user = User.find(params[:id])
+        render json: user.to_json(:include => {
+            :scorecards => {:only => [:id, :course_id, :scores_front, :scores_back]}
+        }, except: [:created_at, :updated_at])
+    end
 end
