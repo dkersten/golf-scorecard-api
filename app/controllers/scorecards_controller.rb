@@ -16,6 +16,12 @@ class ScorecardsController < ApplicationController
         render json: scorecard.to_json
     end
 
+    def destroy
+        scorecard = Scorecard.find(params[:id])
+        scorecard.destroy
+        render json: {message: "Scorecard deleted"}
+    end
+
     private
         def scorecard_params
             params.require(:scorecard).permit(:user_id, :course_id, :scores_front => [], :scores_back => [])
