@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # Course.destroy_all
 # Hole.destroy_all
-Scorecard.destroy_all
+# Scorecard.destroy_all
 
 #Scorecards
-Scorecard.create(user_id: 1, course_id: 9, scores_front: [4,3,5,5,5,6,5,4,6])
-Scorecard.create(user_id: 1, course_id: 9, scores_front: [4,3,5,5,5,6,5,4,6], scores_back: [6,4,5,5,6,3,4,2,6])
-Scorecard.create(user_id: 1, course_id: 11, scores_front: [4,4,3,7,4,6,3,6,6], scores_back: [4,6,3,5,4,5,6,5,6])
+# Scorecard.create(user_id: 1, course_id: 9, scores_front: [4,3,5,5,5,6,5,4,6])
+# Scorecard.create(user_id: 1, course_id: 9, scores_front: [4,3,5,5,5,6,5,4,6], scores_back: [6,4,5,5,6,3,4,2,6])
+# Scorecard.create(user_id: 1, course_id: 11, scores_front: [4,4,3,7,4,6,3,6,6], scores_back: [4,6,3,5,4,5,6,5,6])
 
 # Users
 # User.create(first_name: "Dan", last_name: "Kersten", email: "dk@hi.com", password: "123", password_digest: "123")
@@ -23,6 +23,7 @@ Scorecard.create(user_id: 1, course_id: 11, scores_front: [4,4,3,7,4,6,3,6,6], s
 # Course.create(name: "Sheridan")
 # Course.create(name: "Terry Hills")
 # Course.create(name: "Manatee County Course")
+# Course.create(name: "Generic Course")
 
 # ## Holes
 
