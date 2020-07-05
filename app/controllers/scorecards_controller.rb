@@ -21,6 +21,15 @@ class ScorecardsController < ApplicationController
         render json: scorecard.to_json
     end
 
+    def update
+        scorecard = Scorecard.find(params[:id])
+        scorecard.update({
+            scores_front: params[:scores_front],
+            scores_back: params[:scores_back]
+        })
+        render json: scorecard.to_json
+    end
+
     def destroy
         scorecard = Scorecard.find(params[:id])
         scorecard.destroy
